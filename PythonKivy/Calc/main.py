@@ -18,7 +18,7 @@ class MyApp(App):
 		if(self.formula == "0"):
 			self.formula = ""
 		if str(inctance.text) == ",":
-			self.formula += "."
+			self.formula += "." 
 		else:
 			self.formula += str(inctance.text)
 		self.update_label()
@@ -96,6 +96,5 @@ class MyApp(App):
 		bl.add_widget(gl)
 
 		return bl
-
 if __name__ == "__main__":
 	MyApp().run()
